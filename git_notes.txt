@@ -41,3 +41,10 @@ git branch feature-NH-678
 git checkout feature-NH-678
 
 to do the above in one command -> git checkout -b feature-NH-678 
+
+git status 
+git add FILENAME or git add . (ALL FILES)
+git commit -a -m "init commit" 
+git fetch 
+git status 
+git 
