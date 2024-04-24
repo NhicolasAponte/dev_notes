@@ -1,0 +1,43 @@
+Update release, then rebase dev branch onto release branch. Do a soft reset, then commit. Force push to origin. Once approved, merge with fast forward only
+ 
+Git checkout dev/TICKET 
+Git rebase release/version
+ 
+To clean up local repo - git remote prune origin
+ 
+To reset to what is on origin
+git fetch
+git reset --hard origin/release/4.7
+ 
+git submodule update --remote
+git submodule update --recursive --init
+
+GIT STRAT —-- 
+Only two releases at a time; main branch contains the live code
+ 
+Once the release is done(ex. 4.5) is in its release branch, it gets merged to main
+ 
+To create pr:
+Create a backup of current dev branch
+ 
+Soft reset dev branch to last commit on release branch
+Write out new dev branch commit message, commit changes
+ 
+Force push updated dev branch
+ 
+Fetch to make sure target release branch is up to date
+ 
+Rebase dev branch onto updated release if needed
+ 
+Force push updated dev branch
+ 
+Create pr
+ 
+Fast forward merge to release branch
+ 
+Delete back up dev branch 
+
+git branch feature-NH-678
+git checkout feature-NH-678
+
+to do the above in one command -> git checkout -b feature-NH-678 

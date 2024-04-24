@@ -1,0 +1,30 @@
+ npx react-native@X.XX.X init ReactProj --version X.XX.X
+ 
+npx react-native start
+ 
+npx react-native run-ios
+ 
+If getting build errors:
+Had to check and then specify ruby versions with rbenv and chose local version
+Then installed cocoapods with ruby
+Then I went into ios/
+Then pod install
+Maybe this wouldve been avoided if I did npm install 
+
+2 axes: main axis and cross axis; cross axis is perpendicular to main
+ 
+Row: main axis is left to right
+Column: top to bottom
+Row reverse: right to left
+Column reverse: bottom to top
+ 
+justifyContent: for organizing along main axis
+alignItems: for organizing along cross axis; default is stretch
+ 
+Defining how much space containers and items should take:
+You define how much they should take along the cross axis using align items in the parent container
+ 
+You can tell a child item how much it should take of what it can get along the main axis using flex
+ 
+Flex property is assigned to items within the container
+Flex: 1 => takes all that it can take while allowing the remaining elements to exist along main axis

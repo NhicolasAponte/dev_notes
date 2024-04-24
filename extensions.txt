@@ -1,0 +1,9 @@
+web dev 
+
+es7 snippets 
+typescript nightly 
+tailwind css intellisense 
+auto rename tag 
+code spell checker 
+highlight matching tag 
+
